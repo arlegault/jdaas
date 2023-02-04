@@ -9,11 +9,31 @@
   <body style="">
     <div class="container">
       <div class="hero-unit">
-        <h1>JDaaS</h1>
-        <h2>Jeff Dean as a Service</h2>
-        <p><em>v0.0.1</em></p>
+          <div class="row-fluid">
+              <div class="span9">
+                <h1>JDaaS</h1>
+                <h2>Jeff Dean as a Service</h2>
+                 <p><em>v0.0.1</em></p>
+              </div>
+
+              <div class="span3">
+                  <p> </p>
+          <p><a class="btn btn-primary btn-large" onClick="window.open('http://www.protocolfarm.xyz')";>Request API Key &raquo;</a></p>
+                  <p style="margin:0; font-size:10px">Did this make you laugh?</p>
+                <p style="margin:0;font-size:10px">Send me $5 with paypal</p>
+                <form action="https://www.paypal.com/donate" method="post" target="_top" >
+                    <input type="hidden" name="business" value="KS9UPAZH28XFA" />
+                    <input type="hidden" name="no_recurring" value="0" />
+                    <input type="hidden" name="item_name" value="if the previous website made you laugh" />
+                    <input type="hidden" name="currency_code" value="USD" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                    <img alt="" border="0"  src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+              </form>
+              </div>
+          </div>
       </div>
     </div>
+
     <div class="container">
       <div class="content" style="margin-left:50px;">
         <h2 id="introduction">Introduction</h2>
@@ -25,5 +45,38 @@
             <li><strong>/advice</strong> Stuck? WWJDD- Get advice from the man himself.</li>
             <li><strong>/numbers</strong> Some numbers Jeff thinks you should know for "back of the envelope" calculations.</li>
         </ul>
+
+<h2>Try It!</h2>
+          <div class="row-fluid">
+            <div class="span6">
+                <span class="label label-success" onClick>GET</span><p style="display:inline;margin:5px">https://jdaas.xyz/jokes</p>
+                <br/>
+                <span class="label label-success">GET</span><p style="display:inline;margin:5px">https://jdaas.xyz/advice</p>
+                <br/>
+                <span class="label label-success">GET</span><p style="display:inline;margin:5px">https://jdaas.xyz/numbers</p>
+                <br/>
+            </div>
+          </div>
+
+          <div class="span8">
+            <div class="card" style="background-color:DimGray;margin:10px" height="30%" width="30%">
+
+
+                <p style="color:LightGrey;display:inline;margin:0">HTTP/1.1</p><p style="color:DarkGreen;display:inline;margin:0"> 200 OK</p>
+                <p style="color:LightGrey">Content-Type: application/vnd.api+json</p>
+                <p style="color:LightGrey">{</p>
+                <p style="color:LightGrey">&nbsp;&nbsp;"data":{</p>
+                <p style="color:LightGrey">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"humor": "high",</p>
+                <p style="color:LightGrey">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"fact": "true",</p>
+                <p style="color:LightGrey">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"source": "google interns",</p>
+                <p style="color:LightGrey">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"joke": "Jeff Dean once shifted a bit so hard it ended up on another computer."</p>
+                <p style="color:LightGrey">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+                 <p style="color:LightGrey">}</p>
+            </div>
+          </div>
+
+
+
+
   </body>
 </html>
