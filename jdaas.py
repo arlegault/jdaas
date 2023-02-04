@@ -9,7 +9,7 @@ app = Flask(__name__)
 app.debug = True
 
 def readCSVtoList(csvname, arrayname):
-    with open(csvname, 'rb') as csvfile:
+    with open(csvname, 'r') as csvfile:
         reader = csv.reader(csvfile, delimiter = ',')
         for row in reader:
             arrayname.append(row)
@@ -49,7 +49,7 @@ def SlackResponse():
 def JdJokes():
 
     joke_array = []
-    readCSVtoList('/home/ubuntu/jdaas/jeffdeanjokes.csv', joke_array)
+    readCSVtoList('/Users/alexlegault/Documents/GitHub/jdaas/jeffdeanjokes.csv', joke_array)
 
     return random.choice(joke_array)[0]
 
