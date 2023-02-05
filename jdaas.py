@@ -24,6 +24,10 @@ def welcome():
 #    -/jokes     returns a Jeff Dean joke
 #    -/advice    get some advice from Jeff
 #    -/numbers   returns numbers Jeff thinks you should know
+#    setup https://medium.com/techfront/step-by-step-visual-guide-on-deploying-a-flask-application-on-aws-ec2-8e3e8b82c4f7
+#    ssl https://certbot.eff.org/instructions?ws=nginx&os=ubuntuother
+#    try_files $uri $uri/ was problem in  sudo nano /etc/nginx/sites-available/default
+#    restart after changes sudo systemctl restart helloworld
 #    """
 
 @app.route('/slack', methods=['POST'])
